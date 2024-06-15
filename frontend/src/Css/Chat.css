@@ -1,0 +1,148 @@
+.window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #2A2A2A;
+    height: 750px;
+    width: 650px;
+    border-radius: 10px;
+}
+
+.header-chat-window {
+    display: flex;
+    align-items: center;
+    background-color: #2A2A2A;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgb(25, 25, 25);
+    border-radius: 5px;
+}
+
+.nav-user {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.user-image {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.username {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.send-message {
+    background-color: #2A2A2A;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px -3px 15px rgb(25, 25, 25);
+}
+
+.send-message form {
+    display: flex;
+    align-items: center;
+}
+
+.send-message input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #2A2A2A;
+    color: #fff;
+    outline: none;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.send-message button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2f9628;
+    color: #fff;
+    cursor: pointer;
+}
+
+.send-message button:hover {
+    background-color: #2f9628;
+}
+
+.messages {
+    overflow-y: auto;
+    flex: 1;
+    padding: 10px;
+    scrollbar-width: thin;
+}
+
+.first-user-messages,
+.second-user-messages {
+    margin-bottom: 15px;
+}
+
+.ul-first-user-msg,
+.ul-second-user-msg {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.li-fisrt-user-msg,
+.li-second-user-msg {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.img-first-user,
+.img-second-user {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.img-first-user img,
+.img-second-user img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.ul-first-user-msg p,
+.ul-second-user-msg p {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.li-second-user-msg {
+    align-self: flex-end;
+}
+
+.ul-second-user-msg p {
+    background-color: #2f9628;
+}
+
+.ul-second-user-msg p {
+    color: #fff;
+}
